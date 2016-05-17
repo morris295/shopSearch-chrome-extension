@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 
-	"name": "shopSearch",
+	"name": "ShopSearch",
 	"description": "This extension allows you to search on a product name selected in a web page's text.",
 	"version": "1.0",
 
@@ -12,6 +12,11 @@
 		"persistent": false
 	},
 
+	"icons": {
+		"16": "image/shop-search-16.png",
+		"32": "image/shop-search-32.png",
+		"128": "image/shop-search-128.png"
+	},
 	"content_scripts": [
 		{
 			"matches": [
@@ -22,12 +27,10 @@
 			]
 		}
 	],
-
 	"page_action": {
 		"default_title": "ShopSearch",
 		"default_popup": "popup.html"
 	},
-
 	"permissions": [
 		"*://*/*",
 		"contextMenus",

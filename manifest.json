@@ -1,0 +1,36 @@
+{
+	"manifest_version": 2,
+
+	"name": "shopSearch",
+	"description": "This extension allows you to search on a product name selected in a web page's text.",
+	"version": "1.0",
+
+	"background": {
+		"scripts": [
+			"background/bootstrap.js"
+		],
+		"persistent": false
+	},
+
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*/*"
+			],
+			"js": [
+				"content/shop-search-go.js"
+			]
+		}
+	],
+
+	"page_action": {
+		"default_title": "ShopSearch",
+		"default_popup": "popup.html"
+	},
+
+	"permissions": [
+		"*://*/*",
+		"contextMenus",
+		"activeTab"
+	]
+}

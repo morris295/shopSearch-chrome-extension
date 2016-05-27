@@ -1,0 +1,4 @@
+*.project
+.settings/
+style/mail/contact_me.php
+style/LICENSE

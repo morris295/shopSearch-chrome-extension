@@ -4,6 +4,8 @@
 	"name": "ShopSearch",
 	"description": "This extension allows you to search on a product name selected in a web page's text.",
 	"version": "1.0",
+	
+	"options_page": "configuration.html",
 
 	"background": {
 		"scripts": [
@@ -23,7 +25,8 @@
 				"*://*/*"
 			],
 			"js": [
-				"content/shop-search-go.js"
+			    "content/configuration.js",
+			    "content/shop-search-go.js"
 			]
 		}
 	],
